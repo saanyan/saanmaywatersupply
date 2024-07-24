@@ -6,7 +6,7 @@
 	<meta charset="utf-8" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
 	<meta content="IE=edge" http-equiv="X-UA-Compatible">
 	<title>HI Staff Location #CarinaPH</title>
-	<link rel="icon" href="assets/sklph.png">
+	<link rel="icon" href="assets/hi.png">
 	
 	<!-- CSS -->
 	<link href="https://unpkg.com/leaflet@0.7.7/dist/leaflet.css" rel="stylesheet">
@@ -174,7 +174,7 @@
 	          var cartoData = null; //These adds data from Carto using the SQL API, declares variables, and writes the SQL selection query
 	          var pantriesData = {};
 	          var sqlQuery = "SELECT the_geom, name, street_address, barangay, municipality_city, province, contact, more FROM " + config.cartoTablename;
-	          var map = L.map('map', { center: config.mapcenter, zoom: 6, zoomControl: config.zoomControl });   // Creates the Leaflet map object
+	          var map = L.map('map', { center: config.mapcenter, zoom: 5, zoomControl: config.zoomControl });   // Creates the Leaflet map object
 	          var osmGeocoder = new L.Control.OSMGeocoder({position: 'topleft'}); //Adds Search toolbar; OSMGeocoder       
 	          map.addControl(osmGeocoder);
 	          
