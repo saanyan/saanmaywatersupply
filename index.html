@@ -201,7 +201,7 @@
 	        	  cartoData = L.geoJson(data, {
 	        	    pointToLayer: function(feature, latlng) {
 	        	      var marker = L.marker(latlng);
-	        	      marker.bindPopup('<b>Water Supply: <\/b>' + feature.properties.name + '<br>' + '<b>Street Address: <\/b>' + feature.properties.street_address + '<br>' + '<b>Barangay: <\/b>' + feature.properties.barangay + '<br>' + '<b>Municipality/City: <\/b>' + feature.properties.municipality_city + '<br>' + '<b>Province: <\/b>' + feature.properties.province + '<br>' + '<b>Contact: <\/b>' + feature.properties.contact + '<br>' + '<b>More information: <\/b>' + feature.properties.more + '');
+	        	      marker.bindPopup('<b>Name: <\/b>' + feature.properties.name + '<br>' + '<b>Street Address: <\/b>' + feature.properties.street_address + '<br>' + '<b>Barangay: <\/b>' + feature.properties.barangay + '<br>' + '<b>Municipality/City: <\/b>' + feature.properties.municipality_city + '<br>' + '<b>Province: <\/b>' + feature.properties.province + '<br>' + '<b>Contact: <\/b>' + feature.properties.contact + '<br>' + '<b>More information: <\/b>' + feature.properties.more + '');
 	        	      return marker;
 	        	    },
 	        	    onEachFeature: function (feature, layer) {
