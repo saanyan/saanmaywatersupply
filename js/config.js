@@ -2,7 +2,7 @@
             cartoUsername: "anditabinas",
             cartoInsertFunction : "insert_crowd_mapping_data",
             cartoTablename: "watersupply_odetteph",
-            mapcenter: [9.936,122.003],
+            mapcenter: [12.536, 122.551],
             drawOptions: {
                 draw: {
                     polygon: false,
